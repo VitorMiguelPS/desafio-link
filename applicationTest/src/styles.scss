@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Fonts
+@font-face {
+  font-family: metropolisBold;
+  src: url("../src/assets/fonts/Metropolis-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: metropolisSemiBold;
+  src: url("../src/assets/fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: metropolisMedium;
+  src: url("../src/assets/fonts/Metropolis-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: metropolisRegular;
+  src: url("../src/assets/fonts/Metropolis-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: metropolisLight;
+  src: url("../src/assets/fonts/Metropolis-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: proximaNova;
+  src: url("../src/assets/fonts/proxima-nova.otf") format("opentype");
+}
+
+body{
+  margin: 50px 100px;
+}

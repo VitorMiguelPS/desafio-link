@@ -1,0 +1,15 @@
+<div class="options-filter">
+  <div class="options-filter__searchBar">
+    <input type="text" class="txtSearch" placeholder="Search movies, actors or genre" />
+  </div>
+  <div class="options-filter__favorites" *ngIf="urlSite != '/favoritemovies'">
+    <a routerLink="/favoritemovies">
+      <p>Favorites</p>
+    </a>
+  </div>
+  <div class="options-filter__favorites" *ngIf="urlSite == '/favoritemovies'">
+    <a routerLink="/movieslist">
+      <p>List all</p>
+    </a>
+  </div>
+</div>

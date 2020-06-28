@@ -1,0 +1,29 @@
+<div class="profile-register">
+  <div class="profile-register__instruction">
+    <p class="profile-register__instruction--text">
+      It's time to create your profile and customize your experience in <strong>LinkApi Movies</strong>!
+    </p>
+  </div>
+  <form #formProfile="ngForm" (ngSubmit)="onSubmit(formProfile)" class="profile-register__inputs">
+    <p class="profile-register__inputs--title">Name</p>
+    <input #nameProfile type="text" name="name" placeholder="John Wick" id="profile-register__inputs--name" [(ngModel)]="profile.name">
+    <p class="profile-register__inputs--title">Age</p>
+    <input #ageProfile type="text" name="age" placeholder="24" id="profile-register__inputs--age" [(ngModel)]="profile.age">
+    <p class="profile-register__inputs--title">Favorite movie</p>
+    <input #movieProfile type="text" name="movie" placeholder="Sharknado 2" id="profile-register__inputs--movie" [(ngModel)]="profile.movie">
+    <p class="profile-register__inputs--title">Favorite genre</p>
+    <select #genreProfile name="genre" id="profile-register__inputs--genre" [(ngModel)]="profile.genre">
+      <option value="horror">Horror</option>
+      <option value="action">Action</option>
+      <option value="adventure">Adventure</option>
+      <option value="fantasie">Fantasie</option>
+      <option value="kids">Kids</option>
+    </select>
+    <a routerLink="/movieslist">
+      <button type="submit" class="profile-register__button--save"> Save profile </button>
+    </a>
+  </form>
+  <div class="profile-register__button">
+    <button type="reset" class="profile-register__button--cancel"> Cancel </button>
+  </div>
+</div>

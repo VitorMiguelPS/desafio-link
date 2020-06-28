@@ -1,0 +1,80 @@
+.profile-register{
+    display: flex;
+    margin-block-start: 65px;
+    height: 365px;
+    div{
+      padding: 0px 90px 0px 0px;
+    }
+    &__instruction{
+      width: 445px;
+      &--text{
+        font-family: metropolisRegular;
+        font-size: 28px;
+        color: #637463;
+        text-align: end;
+        margin-top: 15px;
+      }
+    }
+    &__inputs{
+      padding: 0px 90px 0px 0px;
+      width: 270px;
+      &--title{
+        font-family: proximaNova;
+        font-size: 18px;
+        color: #414646;
+        margin-bottom: 5px;
+      }
+      input{
+        border: none;
+        border-bottom: 1px solid #A0AFA0;
+        font-family: proximaNova;
+        width: 200px;
+        font-size: 17px;
+        &::placeholder{
+          color: #A0AFA0;
+        }
+      }
+      #profile-register__inputs--genre{
+        width: 204px;
+        border: none;
+        border-bottom: 1px solid #A0AFA0;
+        font-size: 17px;
+        font-family: proximaNova;
+        color: #A0AFA0;
+        &:focus{
+          color: #000;
+        }
+      }
+    }
+    &__button{
+      padding: 0;
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &--cancel{
+        font-size: 18px;
+        color: #A0AFA0;
+        background: none;
+        border: none;
+        height: 45px;
+        &:hover{
+          color: #4b534b;
+        }
+      }
+      &--save{
+        font-size: 18px;
+        color: #FCFCFC;
+        background-color: #3CC896;
+        border: none;
+        border-radius: 6px;
+        width: 138px;
+        height: 45px;
+        transform: translate(435px, 75px);
+        &:hover{
+          background-color: #469277;
+        }
+      }
+    }
+  }
+  

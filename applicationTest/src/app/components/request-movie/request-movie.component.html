@@ -1,0 +1,7 @@
+<ul class="movies-list">
+  <li *ngFor="let m of movies" class="movies-list__item">
+    <a routerLink="/filmdetails">
+      <img [src]="m.poster" [alt]="m.title" class="movies-list__item--image">
+    </a>
+  </li>
+</ul>

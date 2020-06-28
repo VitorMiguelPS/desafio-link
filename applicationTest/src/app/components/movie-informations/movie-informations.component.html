@@ -1,0 +1,46 @@
+<div class="movies-informations__list">
+  <div class="movies-informations__list-main">
+    <h1 class="movies-informations__list-main--title"> {{movies[0].title}} </h1>
+    <div class="movies-informations__list-main__sub">
+      <p class="movies-informations__list-main__sub--year"> {{movies[0].year}} </p>
+      <p class="movies-informations__list-main__sub--runtime"> {{movies[0].runtime}} </p>
+      <p class="movies-informations__list-main__sub--rated"> {{movies[0].rated}} </p>
+    </div>
+    <div class="movies-informations__list-main--favorites">
+      <span class="movies-informations__list-main--favorites__image">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 391.837 391.837" style="enable-background:new 0 0 391.837 391.837;" xml:space="preserve">
+          <g>
+            <path style="fill:#D7443E;" d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58
+            c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0
+            c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"/>
+          </g>
+          <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+        </svg>
+      </span>
+      <p class="movies-informations__list-main--favorites__phrase"> 
+        <strong> 
+          Add to favorites 
+        </strong>
+      </p>
+    </div>
+    <p class="movies-informations__list-main-description"> {{movies[0].plot}} </p>
+    <div class="movies-informations__list-main-details">
+      <div class="movies-informations__list-main-details--cast">
+        <h4>Cast</h4>
+        <p class="movies-informations__list-main-details--cast__items"> {{movies[0].actors}} </p>
+      </div>
+      <div class="movies-informations__list-main-details--genre">
+        <h4>Genre</h4>
+        <p class="movies-informations__list-main-details--genre__items"> {{movies[0].genre}} </p>
+      </div>
+      <div class="movies-informations__list-main-details--director">
+        <h4>Director</h4>
+        <p class="movies-informations__list-main-details--director__items"> {{movies[0].director}} </p>
+      </div>
+    </div>
+  </div>
+  <div class="movies-informations__list-image">
+    <img src="{{movies[0].poster}}" alt="{{movies[0].title}}">
+  </div>
+
+</div>

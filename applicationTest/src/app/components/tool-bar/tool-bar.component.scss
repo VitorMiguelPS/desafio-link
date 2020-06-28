@@ -1,0 +1,24 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  &--link {
+    a {
+      display: flex;
+      text-decoration: none;
+    }
+    &__title {
+      font-family: metropolisSemiBold;
+      color: #37b987;
+      font-size: 28px;
+      margin-left: 10px;
+    }
+    &__image {
+      width: 160px;
+    }
+  }
+  &--login {
+    svg{
+      width: 47px;
+    }
+  }
+}
